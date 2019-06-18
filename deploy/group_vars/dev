@@ -1,0 +1,4 @@
+---
+env: dev
+domain: "10.0.0.121"
+git_deploy_version: dev

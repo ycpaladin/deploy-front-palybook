@@ -1,0 +1,6 @@
+root_dir: "/usr/local/web/{{ env }}/{{ project_name }}"
+
+source_dir: "{{ root_dir }}/source"
+gerrit_domain: github.com
+gerrit_project: ionic3-cnode
+project_name: "{{ gerrit_project }}"

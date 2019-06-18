@@ -1,0 +1,7 @@
+---
+- name: copy build to web server
+  copy:
+    src: ../build/
+    dest: "{{ source_dir }}"
+    force: yes
+    backup: yes

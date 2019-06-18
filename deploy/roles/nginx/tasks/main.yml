@@ -1,0 +1,11 @@
+---
+- name: Install Nginx package
+  apt: pkg=nginx state=present
+
+- name: Copy nginx config
+  template: |
+    src=apps_nginx.conf dest=/etc/nginx/sites-enabled/{{ project_name }}-{{ env }}
+    owner=root group=root
+
+- name: Reload nginx
+  service: name=nginx state=reloaded

@@ -1,0 +1,7 @@
+---
+- name: checkout source code from github
+  git: |
+    repo=git@{{ gerrit_domain }}:ycpaladin/{{ project_name }}.git version={{ git_deploy_version }} force=yes accept_hostkey=yes
+    dest={{ source_dir }}
+ 
+

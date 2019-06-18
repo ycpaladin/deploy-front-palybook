@@ -1,0 +1,4 @@
+---
+- name: Create project root directory
+  file: |
+    path={{ root_dir }} state=directory owner=root group=root

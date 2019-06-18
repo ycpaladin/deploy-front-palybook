@@ -1,0 +1,10 @@
+---
+- name: install react project
+  hosts: all
+  user: root
+  sudo: yes
+
+  roles:
+    - base
+    - transoprt
+    - nginx
